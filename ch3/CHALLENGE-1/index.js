@@ -30,3 +30,6 @@ stringQ.dequeue();
 stringQ.enqueue("TypeScript");
 console.log(stringQ.size());
 console.log(stringQ.peek());
+const numberQ = new GenericQueue();
+numberQ.enqueue(10);
+numberQ.enqueue(20);
