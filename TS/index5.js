@@ -31,3 +31,32 @@ function funTest(x) {
     }
 }
 funTest("홍길동");
+//숙제2
+//숫자 자리 수 세기 함수
+function funTest2(x) {
+    var result = x.toString().length;
+    console.log(result);
+    return result;
+}
+funTest2(245);
+//숙제3
+//결혼 가능 확률 함수
+function funTest3(salary, house, charming) {
+    var score = 0;
+    var result = null;
+    if (salary) {
+        score += salary % 10000;
+    }
+    if (house === true) {
+        score += 500;
+    }
+    if (charming === "상") {
+        score += 100;
+    }
+    if (score >= 600) {
+        result = "결혼가능";
+        return result;
+    }
+}
+console.log(funTest3(700, false, "중"));
+console.log(funTest3(100, false, "상"));
